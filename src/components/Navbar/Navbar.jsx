@@ -4,6 +4,9 @@ import logo from '../../assets/logo.png'
 import { Link } from 'react-scroll';
 import menuIcon from '../../assets/menu-icon.png'
 
+
+
+
 const Navbar = () => {
 
   const [sticky, setSticky] = useState(false);
