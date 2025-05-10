@@ -4,6 +4,9 @@ import logo from '../../assets/logo.png'
 import { Link } from 'react-scroll';
 import menuIcon from '../../assets/menu-icon.png'
 
+
+
+
 const Navbar = () => {
 
   const [sticky, setSticky] = useState(false);
@@ -23,7 +26,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`container ${sticky? 'dark-nav' : ''}`}>
+    <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
         <img src={logo} className='logo' />
         <ul className={mobileMenu ? '': 'hide-mobile-menu'}>
           <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>

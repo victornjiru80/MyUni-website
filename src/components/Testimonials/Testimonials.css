@@ -101,4 +101,7 @@
     .slider p{
         font-size: 12px;
     }
+    .slide{
+        width: 100%;
+    }
 }
