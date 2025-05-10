@@ -44,8 +44,8 @@ const Contact = () => {
             <p>Feel free to reach out through a contact form or through the links below. Your feedback, questions and suggestions are important to us as we strive to provide exceptional service to our community</p>
             <ul>
                 <li><img src={mailIcon} alt="" />contact@myuni.ac.ke</li>
-                <li><img src={phoneIcon} alt="" />+2547002001930</li>
-                <li><img src={locationIcon} alt="" />80 Mbagathi Road, Kiambu <br /> Nairobi, Kenya</li>
+                <li><img src={phoneIcon} alt="" />+2540000000</li>
+                <li><img src={locationIcon} alt="" />80 Someplace, Kiambu <br /> Nairobi, Kenya</li>
             </ul>
         </div>
         <div className="contact-col">
