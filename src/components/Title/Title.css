@@ -1,15 +1,16 @@
 .title{
  text-align: center;
- color: #212EA0;
- font-size: 15px;
- font-weight: 600;
+ color: var(--primary);
+ font-size: 13px;
+ font-weight: 700;
+ letter-spacing: 0.12em;
  text-transform: uppercase;
- margin: 70px 0 30px;   
+ margin: 90px 0 26px;   
 }
 
 .title h2{
-    font-size: 32px;
-    color: #000F38;
-    margin-top:  5px;
+    font-size: clamp(24px, 4vw, 36px);
+    color: #e6e7ee;
+    margin-top:  8px;
     text-transform: none;
 }

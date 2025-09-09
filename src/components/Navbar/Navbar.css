@@ -1,8 +1,7 @@
 nav{
     width: 100%;
-   /* background: #333; */
     color: #fff;
-    padding: 4px 0;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,15 +9,30 @@ nav{
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    background: linear-gradient(180deg, rgba(15,16,32,0.55), rgba(15,16,32,0.25));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .dark-nav{
-    background: #212ea0;
-    transition: 0.5s;
+    background: linear-gradient(180deg, rgba(15,16,32,0.85), rgba(15,16,32,0.65));
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-icon{
     display: none;
+}
+
+nav ul li a{
+    color: #e6e7ee;
+    opacity: 0.9;
+}
+
+nav ul li a:hover{
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(108,123,255,0.6);
 }
 
 /*    media queries    */
@@ -41,11 +55,11 @@ nav{
         top: 0;
         right: 0px;
         bottom: 0;
-        background: #212ea0;
+        background: rgba(15,16,32,0.95);
         z-index: -1;
         width: 200px;
         padding-top: 70px;
-        transition: 0.5s;
+        transition: 0.4s ease;
     }
     nav ul li{
         display: block;
