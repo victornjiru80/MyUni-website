@@ -1,14 +1,27 @@
 .hero{
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background: linear-gradient(rgba(8,0,58,0.55),rgba(8,0,58,0.55)), url('../../assets/hero.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.hero-container{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-text{
@@ -57,6 +70,12 @@
 }
 
 /* media Queries*/
+
+@media (max-width: 1200px){
+    .hero-container{
+        padding: 0 5%;
+    }
+}
 
 @media (max-width: 850px){
     .hero-text h1{

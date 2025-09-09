@@ -5,14 +5,20 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     z-index: 10;
     background: linear-gradient(180deg, rgba(15,16,32,0.55), rgba(15,16,32,0.25));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav-container{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .dark-nav{
@@ -46,9 +52,21 @@ nav ul li a:hover{
 }
 
 
+@media (max-width: 1200px){
+    .nav-container{
+        padding: 0 5%;
+    }
+    .btn{
+        padding: 14px 22px;
+    }
+}
+
 @media (max-width: 840px){
     nav{
         padding: 15px 0;
+    }
+    .nav-container{
+        padding: 0 5%;
     }
     nav ul{
         position: fixed;
